@@ -1,0 +1,21 @@
+{
+  "name": "mobile",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react-native": "0.84.1"
+  },
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "start": "react-native start --reset-cache",
+    "typecheck": "tsc --noEmit -p tsconfig.json --pretty",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">= 22.11.0"
+  }
+}

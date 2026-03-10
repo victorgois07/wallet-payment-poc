@@ -1,0 +1,44 @@
+{
+  "name": "mobile",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mobile/src",
+  "projectType": "application",
+  "targets": {
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx @react-native-community/cli start --reset-cache",
+        "cwd": "apps/mobile"
+      }
+    },
+    "run-ios": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx @react-native-community/cli run-ios --udid EC96082E-D7E4-4616-8A21-E4A18C6052F1",
+        "cwd": "apps/mobile"
+      }
+    },
+    "run-android": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx @react-native-community/cli run-android",
+        "cwd": "apps/mobile"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "jest",
+        "cwd": "apps/mobile"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "biome check .",
+        "cwd": "apps/mobile"
+      }
+    }
+  },
+  "tags": ["scope:mobile", "type:app"]
+}
