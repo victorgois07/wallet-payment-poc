@@ -1,0 +1,13 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start:dev": "cd ../.. && bun run build:shared && cd apps/api && nest start --watch -p tsconfig.build.json",
+    "start:prod": "node ../../dist/apps/api/main.js",
+    "build": "nest build -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cov": "vitest run --coverage"
+  }
+}

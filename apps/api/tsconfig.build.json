@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "../..",
+    "outDir": "../../dist/apps/api",
+    "paths": {
+      "@wallet/shared": ["dist/libs/shared"],
+      "@wallet/shared/*": ["dist/libs/shared/*"]
+    }
+  }
+}
