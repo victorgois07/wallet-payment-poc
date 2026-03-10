@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+.nx/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# React Native
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/build/
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+
+# Metro
+.metro-health-check*
+
+# Temporary
+tmp/
+temp/
+
+# Task Master
+.taskmaster/
+
+# Claude Code
+.claude/
+.mcp.json
+CLAUDE.md
